@@ -18,7 +18,7 @@ app.use(cors());
 
 
 // Initialize the main project folder
-app.use(express.static('dist'));
+app.use(express.static('src/client'));
 
 
 // Setup Server
@@ -39,5 +39,5 @@ const sendData = (req, res) => {
 app.get('/all', sendData);
 
 app.get('/', (req, res) => {
-    res.sendFile('dist/index.html');
+    res.sendFile('/client/view/index.html', { root: __dirname + '/..'});
 });
