@@ -1,14 +1,13 @@
-import { handleSubmit } from "./js/formHandler.js";
-// import { checkForName } from "./js/nameChecker.js";
+import { handleSubmit } from './js/formHandler';
+import { checkForName } from './js/nameChecker';
+
+export {
+    handleSubmit,
+    checkForName
+}
 
 alert('I EXIST');
 
 document.getElementById('form').addEventListener('submit', event => {
-    handleSubmit(event);
+    Client.handleSubmit(event);
 });
-
-
-// export {
-//     handleSubmit,
-//     checkForName
-// }
