@@ -4,6 +4,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry: './src/client/index.js',
     devtool: 'source-map',
+    devServer: {
+        contentBase: './dist',
+        port: 3000,
+    },
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
