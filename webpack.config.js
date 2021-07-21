@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: './src/client/index.js',
@@ -7,5 +8,12 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         libraryTarget: 'var',
         library: 'Client'
-    }
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            title: 'Output Management',
+            template: './src/client/view/index.html',
+            filename: './index.html'
+        })
+    ]
 }
