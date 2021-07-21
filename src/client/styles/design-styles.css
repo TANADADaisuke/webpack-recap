@@ -216,7 +216,6 @@ figcaption {
 
 
 #photo-gallery-one {
-    background: url(../img/camellia.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -224,7 +223,6 @@ figcaption {
 
 
 #photo-gallery-two {
-    background: url(../img/fall-pond.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -232,7 +230,6 @@ figcaption {
 
 
 #photo-gallery-three {
-    background: url(../img/cherry-blossom.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -240,7 +237,6 @@ figcaption {
 
 
 #photo-gallery-four {
-    background: url(../img/nature-earth.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
