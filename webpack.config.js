@@ -7,6 +7,7 @@ module.exports = {
     devServer: {
         contentBase: './dist',
         port: 3000,
+        injectClient: false,
     },
     output: {
         filename: 'main.js',
@@ -20,6 +21,11 @@ module.exports = {
             {
                 test: /\.css$/i,
                 use: ['style-loader', 'css-loader'],
+            },
+            {
+                test: "/\.js$/",
+                exclude: /node_modules/,
+                loader: 'babel-loader'
             },
         ],
     },
