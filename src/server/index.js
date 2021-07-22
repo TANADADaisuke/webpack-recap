@@ -1,5 +1,9 @@
 // Setup empty JS object to act as endpoint for all routes
-let projectData = {};
+let projectData = {
+    'title': 'test json response',
+    'message': 'this is a message',
+    'time': 'now'
+};
 
 // Require Express to run server and routes
 const express = require('express');
@@ -22,7 +26,7 @@ app.use(express.static('dist'));
 
 
 // Setup Server
-const port = 3000;
+const port = 3001;
 const server = app.listen(port, listening);
 
 function listening() {
@@ -36,7 +40,7 @@ const sendData = (req, res) => {
     console.log('/all: success', projectData);
 }
 
-app.get('/all', sendData);
+app.get('/test', sendData);
 
 app.get('/', (req, res) => {
     res.sendFile('dist/index.html');
